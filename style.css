@@ -40,6 +40,10 @@ text-decoration: none;
 color: aliceblue;
 }
 
+#nav-text1:hover{
+    color:#9ca29a;
+}
+
 @media (max-width: 768px) {
   .carousel img {
     height: 50vh;
