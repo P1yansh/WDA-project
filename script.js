@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const userForm = document.getElementById('userForm');
+    const userform = document.getElementById('userForm');
     const userTableBody = document.getElementById('userTable');
     const cookieAlert = document.getElementById('cookieAlert');
     const acceptCookiesBtn = document.getElementById('acceptCookies');
 
     const dynamicAlerts = document.getElementById('dynamicAlerts');
-
+    n
     function showNotification(message, type = 'success') {
         const alertHTML = `
         <div class="alert alert-${type} alert-dismissible fade show fixed-top w-75 mx-auto mt-3 shadow-lg" role="alert" style="z-index: 2001;">
@@ -41,10 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (userTableBody) {
                 const row = userTableBody.insertRow();
-                row.innerHTML = `<td>${name}</td>
-                                <td>${email}</td>
-                                <td>${phone}</td>
-                                <td>${plan}</td>`;
+                row.innerHTML = `<td>${name}</td><td>${email}</td><td>${phone}</td><td>${plan}</td>`;
             }
 
             this.reset();
