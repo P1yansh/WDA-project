@@ -71,13 +71,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     //Alert 
-    if (acceptCookiesBtn) {
-        acceptCookiesBtn.addEventListener("click", () => {
-            const alertBox = document.getElementById("cookieAlert");
-            if (alertBox) {
-                alertBox.classList.remove("show");
-                setTimeout(() => alertBox.remove(), 500);
-            }
-        });
+   if (cookieAlert) {
+        setTimeout(() => {
+            cookieAlert.classList.add('show');
+        }, 1000);
+        if (acceptCookiesBtn) {
+            acceptCookiesBtn.addEventListener("click", () => {
+                cookieAlert.classList.remove('show');
+                setTimeout(() => cookieAlert.remove(), 500);
+            });
+        }
     }
 });
