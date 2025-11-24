@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UrbanBite - Select Tiffin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex flex-column align-items-start p-0" href="index.html">
+                <strong class="h4 mb-0 fw-bold">UrbanBite</strong>
+                <span class="small-text">Tiffin Services</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#register">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#offers">Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tiffin options -->
+    <section class="py-5 bg-light flex-grow-1">
+        <div class="container text-center">
+            <h2 class="mb-2">Choose Your Meal Plan</h2>
+            <p class="text-muted mb-5">We have healthy and tasty options for everyone in the family.</p>
+
+            <div class="row g-4 justify-content-center">
+
+                <!-- Adult Tiffin -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow card-hover">
+                        <img src="https://www.slurrp.com/web/_next/image?url=https%3A%2F%2Fimages.slurrp.com%2Fprodarticles%2Fhp5sj8p2cl.webp%3Fimpolicy%3Dslurrp-20210601%26width%3D1200%26height%3D900%26q%3D75&w=3840&q=75"
+                            class="card-img-top" alt="Adult Tiffin" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Standard Thali</h5>
+                            <p class="text-muted small">Perfect for Adults</p>
+                            <p class="card-text">4 Roti, 1 Dal, 1 Seasonal Sabzi, Rice, Salad & Pickle. Home-style
+                                taste.</p>
+                            <button class="btn btn-outline-success w-100 apply-btn">Select Plan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kids Special -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow card-hover">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Kids Tiffin" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Kids Special</h5>
+                            <p class="text-muted small">Tasty & Non-Spicy</p>
+                            <p class="card-text">Small Rotis, Paneer/Potato dish, Fruit portion & Sweet treat. Fun &
+                                Healthy!</p>
+                            <button class="btn btn-outline-success w-100 apply-btn">Select Plan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Healthy/Diet Tiffin -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow card-hover">
+                        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Diet Tiffin" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Diet / Healthy</h5>
+                            <p class="text-muted small">Low Calorie</p>
+                            <p class="card-text">Boiled Veggies, Brown Rice/Multigrain Roti, Salad, Dal & Curd.</p>
+                            <button class="btn btn-outline-success w-100 apply-btn">Select Plan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Premium/Deluxe Tiffin -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow card-hover">
+                        <img src="https://ik.imagekit.io/iwcam3r8ka/prod/blog-header/202507/1917c911-c512-474a-819b-74d3cca262fa.jpg"
+                            class="card-img-top" alt="Premium Tiffin" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Premium Deluxe</h5>
+                            <p class="text-muted small">Rich & Filling</p>
+                            <p class="card-text">Paneer/Chicken Special, Dal Makhani, Pulao, Roti, Sweet & Papad.</p>
+                            <button class="btn btn-outline-success w-100 apply-btn">Select Plan</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal  -->
+    <div class="modal fade" id="applyModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Selection Confirmed</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>You have selected this plan! Please proceed to payment or contact us to finalize your
+                        subscription.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Okay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-dark text-white text-center py-3 mt-auto">
+        <p class="mb-0">© 2025 TiffinOnClick | Fresh Food, Fast Delivery</p>
+        <p class="mb-0">Made by: <strong>https.pixel</strong></p>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
